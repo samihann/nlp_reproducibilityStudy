@@ -58,7 +58,7 @@ To reproduce the paper results following steps were performed in sequential orde
     - RTX-A6000 GPU with 48 GB memory
 
 <p align="center">
-<img src="images/image_1.png" alt="image one" width="200" />
+<img src="images/Image_1.png" alt="image one" width="200" />
 </p>
 
 <hr/>
