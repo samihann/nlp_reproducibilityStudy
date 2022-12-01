@@ -119,6 +119,10 @@ python3 main.py --override fairr_ruleselector,pwq_leq_0to3_OWA_rule
 -  It is a roberta based linear classification model that takes in concatenated statements, facts and rules as input and outputs an intermediate conclusion.
 - The model took around 1.5H to train each epoch. The authors have recommended in the evaluation statements to train the rule selector model for 2 epochs. 
 - At the end of each epoch a checkpoint file will be saved for the trained model.
+- The progress of the training model over two epochs can be seen in the image:
+<p align="center">
+<img src="images/image_13.png" alt="image three" width="800" />
+</p>
 
 #### <b>Fact Selector Model</b>
 
@@ -142,6 +146,10 @@ python3 main.py --override fairr_factselector,pwq_leq_0to3_OWA_fact
 -  It is a roberta based token classification model that takes in statements,rules selected by the rule selector and facts present in the theory as input and outputs a series of candidate facts.
 - The model took around 40 mins to train each epoch. The time required to train the model is comparatively less as Rule Selector trained model is used to optimize the training process.
 - At the end of each epoch a checkpoint file will be saved for the trained model.
+- The progress of the training model over an epochs can be seen in the image:
+<p align="center">
+<img src="images/image_15.png" alt="image three" width="800" />
+</p>
 
 #### <b>Resoner Model</b>
 
@@ -165,6 +173,10 @@ python3 main.py --override fairr_reasoner --dataset pw_leq_0to3_OWA_reasoner
 -  It is a text-to text transformer that concatenates facts and rules to give a novel conclusion.
 - The model took around 20 mins to train each epoch. The time required to train the model is comparatively less as Rule Selector trained model and Fact Selector trained model is used to optimize the training process.
 - At the end of each epoch a checkpoint file will be saved for the trained model.
+- The progress of the training model over an epochs can be seen in the image:
+<p align="center">
+<img src="images/image_14.png" alt="image three" width="800" />
+</p>
 
 <hr />
 
